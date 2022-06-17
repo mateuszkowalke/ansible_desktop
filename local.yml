@@ -3,6 +3,11 @@
   become: true
 
   tasks:
+  - name: add alacritty repository
+    ansible.builtin.apt_repository:
+      repo: 'ppa:aslatter/ppa'
+      codename: trusty
+
   - name: install basic packages
     package:
       name:
