@@ -1,0 +1,16 @@
+- hosts: localhost
+  connection: local
+  become: true
+
+  tasks:
+  - name: install basic packages
+    package:
+      name:
+        - build-essential
+        - zsh
+        - stow
+        - fzf
+        - pip
+        - alacritty
+        - tmux
+        - htop

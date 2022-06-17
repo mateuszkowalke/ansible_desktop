@@ -7,6 +7,10 @@ Requires ansible and git to be installed on the system already, so as usuall:
 sudo apt update && sudo apt upgrade
 sudo apt install git ansible
 ```
+And then:
+```sh
+sudo ansible-pull U https://github.com/mateuszkowalke/ansible_desktop.git
+```
 
 ## Post Install
 Change the origin of the .dotfiles repo to your own fork.
