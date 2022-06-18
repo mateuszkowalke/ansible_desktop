@@ -18,8 +18,21 @@
         - alacritty
         - tmux
         - htop
+
   - name: get Hack Nerd Font
     get_url:
       url: https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/Hack.zip
       dest: /tmp
       timeout: 60
+
+  - name: unzip Hack Nerd Font
+    unarchive:
+      src: /tmp/Hack.zip
+      dest: ~/.local/share/fonts/NerdFonts
+      copy: no
+
+  - name: remove temporary Hack.zip file
+    file:
+      path: /tmp/Hack.zip
+      state: absent
+
