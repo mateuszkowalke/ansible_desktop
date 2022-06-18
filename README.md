@@ -2,10 +2,10 @@
 Ansible config for desktops and laptops
 
 ## Install
-Requires ansible and git to be installed on the system already, so as usuall:
+Requires ansible to be installed on the system already, so as usuall:
 ```sh
-sudo apt update && sudo apt upgrade
-sudo apt install git ansible
+sudo apt update && sudo apt upgrade -y
+sudo apt install ansible
 ```
 And then:
 ```sh
