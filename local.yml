@@ -10,7 +10,7 @@
   tasks:
   - name: add alacritty repository
     apt_repository:
-      repo: 'ppa:aslatter/ppa'
+      repo: 'aslatter/ppa'
       codename: trusty
 
   - name: install basic packages
