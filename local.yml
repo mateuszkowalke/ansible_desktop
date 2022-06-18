@@ -25,6 +25,11 @@
       dest: /tmp
       timeout: 60
 
+  - name: create directory to unzip
+    file:
+      path: ~/.local/share/fonts/NerdFonts
+      state: directory
+
   - name: unzip Hack Nerd Font
     unarchive:
       src: /tmp/Hack.zip
