@@ -1,13 +1,14 @@
 - hosts: localhost
   connection: local
-  become: true
 
   tasks:
   - name: add alacritty repository
+    become: true
     apt_repository:
       repo: 'ppa:aslatter/ppa'
 
   - name: install basic packages
+    become: true
     package:
       name:
         - git
