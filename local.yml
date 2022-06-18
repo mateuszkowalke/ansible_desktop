@@ -19,3 +19,7 @@
         - alacritty
         - tmux
         - htop
+  - name: get Hack Nerd Font
+    get_url:
+      url: wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/Hack.zip
+      dest: $HOME
