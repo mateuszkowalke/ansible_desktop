@@ -42,57 +42,57 @@
       state: absent
 
   - name: set dynamic workspaces to false
-    community.generat.dconf:
+    community.generate.dconf:
       key: "/org/gnome/mutter/dynamic-workspaces"
       value: false
 
   - name: set number of workspaces
-    community.generat.dconf:
+    community.generate.dconf:
       key: "/org/gnome/desktop/wm/preferences/num-workspaces"
       value: 8
 
   - name: remove keybinding for switching app
-    community.generat.dconf:
+    community.generate.dconf:
       key: "/org/gnome/shell/keybindings/switch-to-application-1"
       value: []
 
   - name: remove keybinding for switching app
-    community.generat.dconf:
+    community.generate.dconf:
       key: "/org/gnome/shell/keybindings/switch-to-application-2"
       value: []
 
   - name: remove keybinding for switching app
-    community.generat.dconf:
+    community.generate.dconf:
       key: "/org/gnome/shell/keybindings/switch-to-application-3"
       value: []
 
   - name: remove keybinding for switching app
-    community.generat.dconf:
+    community.generate.dconf:
       key: "/org/gnome/shell/keybindings/switch-to-application-4"
       value: []
 
   - name: remove keybinding for switching app
-    community.generat.dconf:
+    community.generate.dconf:
       key: "/org/gnome/shell/keybindings/switch-to-application-5"
       value: []
 
   - name: remove keybinding for switching app
-    community.generat.dconf:
+    community.generate.dconf:
       key: "/org/gnome/shell/keybindings/switch-to-application-6"
       value: []
 
   - name: remove keybinding for switching app
-    community.generat.dconf:
+    community.generate.dconf:
       key: "/org/gnome/shell/keybindings/switch-to-application-7"
       value: []
 
   - name: remove keybinding for switching app
-    community.generat.dconf:
+    community.generate.dconf:
       key: "/org/gnome/shell/keybindings/switch-to-application-8"
       value: []
 
   - name: remove keybinding for switching app
-    community.generat.dconf:
+    community.generate.dconf:
       key: "/org/gnome/shell/keybindings/switch-to-application-9"
       value: []
 
